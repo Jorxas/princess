@@ -1,0 +1,9 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#F8F7FB" />
+  <circle cx="260" cy="220" r="180" fill="#FDE4F0" />
+  <circle cx="980" cy="560" r="220" fill="#E8E5FF" />
+  <rect x="170" y="310" width="860" height="180" rx="28" fill="#FFFFFF" />
+  <text x="600" y="405" text-anchor="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="28">
+    Ajoute un portrait ici
+  </text>
+</svg>

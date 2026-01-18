@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+dist/
+.turbo/
+.env*
+.DS_Store
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+Discussion WhatsApp avec Irice.txt
+IMG-*.jpg
+VID-*.mp4
+public/media/irice.jpg
+public/media/irice-video.mp4
