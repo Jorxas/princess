@@ -124,7 +124,7 @@ export default function BioPage() {
               Petits repères
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-slate-600">
-              <li>• Couleur vibe : rose poudré + lavande.</li>
+              <li>• Couleur vibe : noir + marron.</li>
               <li>• Énergie : calme, stable, rassurante.</li>
               <li>• Mot clé : douceur.</li>
             </ul>
