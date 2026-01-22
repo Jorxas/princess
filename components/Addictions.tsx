@@ -117,23 +117,31 @@ export default function Addictions() {
                 </div>
               </div>
 
-              <button
-                type="button"
-                onClick={() => setIsChatty((prev) => !prev)}
-                className="relative inline-flex h-10 w-24 items-center rounded-full bg-slate-200 transition"
-              >
-                <motion.span
-                  animate={{ x: isChatty ? 48 : 4 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                  className="absolute h-8 w-8 rounded-full bg-white shadow"
-                />
-                <span className="absolute left-3 text-xs font-semibold text-slate-600">
-                  Calme
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => setIsChatty((prev) => !prev)}
+                  className={`relative inline-flex h-10 w-24 items-center rounded-full transition ${
+                    isChatty ? "bg-rose-200" : "bg-slate-200"
+                  }`}
+                  aria-pressed={isChatty}
+                >
+                  <motion.span
+                    animate={{ x: isChatty ? 48 : 4 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                    className="absolute h-8 w-8 rounded-full bg-white shadow"
+                  />
+                </button>
+                <span
+                  className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                    isChatty
+                      ? "bg-rose-500 text-white"
+                      : "bg-slate-900 text-white"
+                  }`}
+                >
+                  {isChatty ? "Bavarde" : "Calme"}
                 </span>
-                <span className="absolute right-3 text-xs font-semibold text-slate-600">
-                  Bavarde
-                </span>
-              </button>
+              </div>
             </div>
             <p className="mt-4 text-sm text-slate-600">
               {isChatty
